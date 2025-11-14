@@ -10,6 +10,7 @@
 
 - [Dependencies](#dependencies)
 - [Install](#install)
+- [Configuration](#configuration)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -45,6 +46,23 @@ tuist --help
 
 Check [asdf](https://github.com/asdf-vm/asdf) readme for more instructions on how to
 install & manage versions.
+
+# Configuration
+
+## Custom Installation URL
+
+You can override the default GitHub repository URL by setting the `MISE_TUIST_INSTALL_URL` environment variable. This is useful if you want to install tuist from a fork or a custom mirror.
+
+```shell
+# Set custom installation URL
+export MISE_TUIST_INSTALL_URL="https://github.com/your-org/tuist"
+
+# Install tuist from the custom URL
+asdf install tuist latest
+
+```
+
+If `MISE_TUIST_INSTALL_URL` is not set, the plugin will use the default repository: `https://github.com/tuist/tuist`
 
 # Contributing
 
