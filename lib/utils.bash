@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-GH_REPO="https://github.com/tuist/tuist"
+GH_REPO="${MISE_TUIST_INSTALL_URL:-https://github.com/tuist/tuist}"
 TOOL_NAME="tuist"
 TOOL_TEST="tuist --help"
 
